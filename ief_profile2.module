@@ -1,0 +1,9 @@
+<?php
+function ief_profile2_module_implements_alter(&$implementations, $hook) {
+  if ($hook == 'form_alter' && isset($implementations['inline_entity_form'])) {
+    $group = $implementations['inline_entity_form'];
+    unset($implementations['inline_entity_form']);
+    $implementations['inline_entity_form'] = $group;
+  }
+}
+?>

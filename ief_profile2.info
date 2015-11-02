@@ -1,0 +1,6 @@
+name = IEF & Profile2 integration
+description = Helper module to solve Inline Entity Forms strange behaviour with Profile2.
+core = 7.x
+package = Fields
+dependencies[] = inline_entity_form
+dependencies[] = profile2
